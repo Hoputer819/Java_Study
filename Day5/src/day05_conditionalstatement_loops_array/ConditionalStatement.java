@@ -1,4 +1,4 @@
-package day05_conditionalstatement;
+package day05_conditionalstatement_loops_array;
 
 import java.util.Scanner;
 
@@ -64,7 +64,7 @@ public class ConditionalStatement {
         String grade = (input >= 90) ? "A" : "B";
         System.out.println(grade + "학점입니다.");
 
-        scan.closr();
+        scan.close();
 
     }
 }
