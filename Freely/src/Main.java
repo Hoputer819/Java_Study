@@ -36,7 +36,7 @@ public class Main {
         scan.close;
         */
 
-        //자판기 프로그램(switch로 하는게 더 편함)
+        /*자판기 프로그램(switch로 하는게 더 편함)
         Scanner num = new Scanner(System.in);
         Scanner mon = new Scanner(System.in);
         System.out.println("**** 자판기 프로그램을 시작합니다.");
@@ -75,6 +75,21 @@ public class Main {
                 System.out.println("다시 선택하세요.");
             }
 
+        }
+        */
+
+        //성적 출려
+        int[][] score = {{85,70,90,95},{80,95,90,75},{75,85,90,80}};
+        System.out.println("학생들의 성적은 다음과 같습니다.");
+        for (int i = 0; i < 3; i++){
+            int sum = 0;
+            System.out.print("학생"+i+": ");
+            for (int j = 0; j < 4; j++){
+                System.out.printf("%d ",score[i][j]);
+                sum += score[i][j];
+            }
+            double average = (double) sum /score[i].length;
+            System.out.printf("| 평균: %.1f\n",average);
         }
 
     }
