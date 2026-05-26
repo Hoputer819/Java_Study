@@ -8,7 +8,7 @@ public class Car { //클래스 선언
     int year; //인스턴스 변수
     String color; //인스턴스 변수
 
-    public Car(){
+    public Car(){ //생성자
         System.out.println("새로운 자동차 객체가 생성됐습니다.");
         this.carInfo();
         countOfCars++;
